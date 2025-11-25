@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+
+/* CABEÇALHO */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.212);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px;
+    width: 100%;
+    max-width: 1172px;
+    /* min-width: 1000px; */
+
+}
+
+.img-tumb {
+    width: 100px;
+}
+
+/* NAV LEFT */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    height: 50px;
+    display: block;
+    margin: -4px 0;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    margin-left: 40px;
+}
+
+.nav-left li a {
+    text-decoration: none;
+    padding: 6px 14px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: block;
+}
+
+/* NAV RIGHT */
+.nav-right {
+    display: flex;
+    gap: 1rem;
+    margin-right: 64px;
+    align-items: center;
+}
+
+.nav-right a {
+    text-decoration: none;
+    padding: 6px 14px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.nav-right .btn-cadastro {
+    border: 1px solid black;
+    border-radius: 3.40282e38px;
+    padding: 6px 24px;
+    display: block;
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    background-image: url(./imagens/back-main.jpg);
+    background-size: 100% 690px;
+    background-repeat: no-repeat;
+}
+
+
+.hero-membros,
+.hero-aprovada,
+.hero-depoimentos,
+.hero-ganhe-viagem,
+.atendimento,
+.hero-saque,
+.hero-compradores,
+.hero-eventos,
+.hero-tecnologia-grid {
+    width: 100%;
+    max-width: 1172px;
+    padding: 48px 0;
+    margin: 0 auto;
+
+}
+
+/* SEÇÃO 1 */
+
+.hero-venda {
+    width: 100%;
+    max-width: 1172px;
+    padding: 96px 0 64px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1;
+}
+
+.hero-venda-left p {
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.hero-content-sec-venda {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0 16px;
+
+}
+
+.hero-venda-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-btn-cadastrar-agora {
+    padding: 16px 32px;
+    font-size: 20px;
+    background-color: #33334f;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 216.41px;
+    border-radius: .625rem;
+    line-height: 1;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.hero-btn-cadastrar-agora-mobile {
+    padding: 16px 32px;
+    font-size: 20px;
+    background-color: #33334f;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 216.41px;
+    border-radius: .625rem;
+    line-height: 1;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    display: none;
+}
+
+.btn-ven-1 {
+    display: inline-block;
+}
+
+.hero-venda-right {
+    max-width: 50%;
+}
+
+.hero-venda-right img {
+    width: 100%;
+    max-height: 356px;
+
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 1;
+
+}
+
+h3 {
+    font-size: 24px;
+    width: 46%;
+    padding-top: 20px;
+    border-top: 1px solid rgb(30, 211, 7);
+    font-weight: inherit;
+    text-align: center;
+    margin: 96px auto 0;
+}
+
+/* MEMBROS  */
+.hero-membros img {
+    width: 100%;
+    max-width: 467px;
+}
+
+.hero-membros .hero-venda-left {
+    display: flex;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.hero-membros .hero-venda-left p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+
+    strong {
+        font-family: "Open Sans", sans-serif;
+    }
+}
+
+.hero-membros .hero-venda-right {
+    max-width: 50%;
+}
+
+/* APROVADA  */
+.hero-aprovada img {
+    width: 100%;
+    max-height: 490px;
+    /* object-fit: cover; */
+}
+
+.hero-aprovada .hero-venda-left {
+    display: flex;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.hero-aprovada .hero-venda-left p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+
+    strong {
+        font-family: "Open Sans", sans-serif;
+    }
+
+}
+
+.hero-aprovada .hero-venda-right {
+    min-width: 50%;
+}
+
+/* DEPOIMENTOS */
+.hero-depoimentos img {
+    width: 100%;
+    max-height: 490px;
+    padding: 0 44px;
+}
+
+.hero-depoimentos .hero-venda-left {
+    display: flex;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.hero-depoimentos .hero-venda-left p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+
+    strong {
+        font-family: "Open Sans", sans-serif;
+    }
+
+}
+
+.hero-depoimentos .hero-venda-right {
+    min-width: 50%;
+}
+
+.hero-content-sec-venda-depo {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 0 16px;
+
+    figure {
+        overflow: hidden;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    img {
+        padding: 0;
+        display: block;
+        width: 50% calc(50% - 48px);
+        /* padding: 0 24px; */
+        max-height: 286px;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.hero-content-sec-venda-depo img:hover {
+    scale: 1.1;
+}
+
+/* VIAGEM  */
+
+.img-viagem {
+    width: 100%;
+    min-height: 360px;
+    object-fit: contain;
+}
+
+.hero-ganhe-viagem .hero-venda-right {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+    width: 50%;
+}
+
+.hero-ganhe-viagem .hero-venda-right p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+
+}
+
+.hero-ganhe-viagem .hero-venda-left {
+    padding: 0 64px 0 172px;
+    min-width: 50%;
+}
+
+.hero-ganhe-viagem .hero-content-sec-venda {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin-top: 32px;
+
+    figure {
+        overflow: hidden;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    img {
+        padding: 0;
+        width: 100%;
+        border-radius: 20px;
+        max-height: 286px;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.hero-ganhe-viagem .hero-content-sec-venda img:hover {
+    scale: 1.1;
+}
+
+/* ATENDIMENTO  */
+.atendimento {
+    padding: 48px 16px;
+}
+
+.content-atend {
+    display: flex;
+    gap: 24px;
+}
+
+.englob-atend {
+    display: flex;
+    flex-direction: column;
+    background-color: #33334f;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.sb-atend {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 70%;
+
+    h2 {
+        color: #ffff;
+    }
+
+    p {
+        color: #ffff;
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.5;
+    }
+}
+
+.content-atend figure {
+    width: 30%;
+
+    img {
+        max-height: 150px;
+        margin-left: 24px;
+    }
+}
+
+.atendimento .hero-btn-cadastrar-agora {
+    background-color: #ffff;
+    color: #33334f;
+    margin-top: 32px;
+}
+
+.btn-atendimento {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* SAQUE  */
+.hero-saque .hero-venda-left {
+    flex: 1;
+
+    p {
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+    }
+}
+
+.hero-saque .hero-venda-right {
+    width: 50%;
+
+    img {
+        max-height: 328px;
+        object-fit: contain;
+        padding: 0 16px;
+    }
+}
+
+.saque-btn {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+}
+
+/* COMPRADORES  */
+
+.hero-compradores {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.content-text {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+    }
+}
+
+.perfis-compra {
+    padding: 0 16px;
+    justify-content: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    figure {
+        /* width: 25%; */
+    }
+
+    img {
+        max-height: 240px;
+        display: block;
+    }
+}
+
+/* EVENTOS  */
+
+.double-click {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+
+    img {
+        width: 70%;
+        max-height: 410px;
+        margin-top: 32px;
+        border-radius: 20px;
+    }
+
+    .eventos-vd {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .saque-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 32px;
+    }
+}
+
+/* TECNOLOGIAS  */
+
+.grid-tec {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 32px;
+    margin-top: 32px;
+    padding: 0 16px;
+}
+
+article {
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px #c7c7c7;
+
+    svg {
+        width: 50px;
+        height: 50px;
+        /* margin: 0 auto; */
+    }
+
+    h3 {
+        text-align: center;
+        border: none;
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+.small {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .hero-membros .hero-content-sec-venda,
+    .hero-depoimentos .hero-content-sec-venda,
+    .hero-saque .hero-content-sec-venda,
+    .hero-eventos .hero-content-sec-venda,
+    .hero-tecnologia-grid .hero-content-sec-venda {
+        flex-direction: column-reverse;
+    }
+
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    .grid-tec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 32px;
+        column-gap: 32px;
+        margin-top: 32px;
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 1023px) { 
+
+    .hero-membros,
+    .hero-aprovada,
+    .hero-depoimentos,
+    .hero-ganhe-viagem,
+    .atendimento,
+    .hero-saque,
+    .hero-compradores,
+    .hero-eventos,
+    .hero-tecnologia-grid {
+        width: 100%;
+        max-width: 990px;
+        padding: 32px 0;
+        margin: 0 auto;
+
+    }
+
+    .hero-content-sec-venda {
+        width: 100%;
+    }
+
+    .hero-venda-left {
+        width: 100% !important;
+    }
+
+    h3 {
+        width: 90%;
+    }
+
+    .hero-venda {
+        width: 100%;
+        max-width: 990px;
+        padding: 32px 0;
+        margin: 0 auto;
+    }
+
+    .nav-left {
+        img {
+            max-height: 33px;
+        }
+    }
+
+    .nav-ul-bbc,
+    .nav-right {
+        display: none !important;
+    }
+
+    .small {
+        width: 24px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-content-sec-venda {
+        flex-direction: column;
+    }
+
+    .hero-venda-left {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+        p {}
+    }
+
+    .hero-venda-right {
+        min-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-height: 372px;
+        }
+    }
+
+    .hero-venda-right img {
+        width: 100%;
+        max-height: 421px;
+        object-fit: contain;
+    }
+
+    .hero-depoimentos .hero-content-sec-venda .hero-venda-right img {
+        width: 100%;
+        max-height: 380px;
+        object-fit: contain;
+    }
+
+    h3 {
+        margin-top: 32px;
+    }
+
+    .perfis-compra {
+
+        div {
+            display: flex;
+            justify-content: initial;
+            width: 100%;
+            gap: 16px;
+            scrollbar-width: none;
+            overflow-x: auto;
+        }
+    }
+
+    .hero-btn-cadastrar-agora {
+        display: none;
+    }
+
+    .hero-btn-cadastrar-agora-mobile {
+        display: flex;
+        margin-top: 24px;
+    }
+    
+    .hero-ganhe-viagem .hero-venda-right {
+    text-align: center;
+    display: flex;
+    gap: 24px;
+    
+}
+
+.hero-ganhe-viagem .hero-venda-left {
+    padding: 0;
+
+    img {}
+}
+
+.atendimento {
+    padding: 0 16px;
+}
+
+.btn-atendimento .hero-btn-cadastrar-agora-mobile {
+    background-color: #ffff;
+    color: #33334f;
+    margin-top: 32px;
+}
+.content-text-box{
+    padding: 0 16px;
+}
+
+.content-atend {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+    img {
+        max-width: 90px;
+        margin: 0 !important;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.sb-atend {
+    min-width: 100%;
+}
+
+.englob-atend {
+    padding: 30px 20px;
+}
+
+
+.hero-compradores{
+    padding: 0 0 32px 0;
+}
+.hero-eventos{
+    padding: 0 16px ;
+}
+.hero-tecnologia-grid .content-text{
+    padding: 0 16px;
+}
+
+}
+@media screen and (max-width: 767px) {
+    .hero-content-sec-venda-depo {
+        flex-direction: column;
+        
+    }
+
+    .grid-tec {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
+}
+.double-click {
+    img {
+        width: 100%;
+    } 
+    .hero-btn-cadastrar-agora{
+    display: inherit;
+}
+}
+    /* .atendimento {
+        padding: 0 16px;
+    }
+
+    .btn-atendimento .hero-btn-cadastrar-agora-mobile {
+        background-color: #ffff;
+        color: #33334f;
+        margin-top: 32px;
+    }
+
+    .content-atend {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        img {
+            max-width: 90px;
+            margin: 0 !important;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .sb-atend {
+        min-width: 100%;
+    }
+
+    .englob-atend {
+        padding: 30px 20px;
+    } */
+}
