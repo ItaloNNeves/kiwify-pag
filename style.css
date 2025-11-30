@@ -14,6 +14,10 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(158, 158, 158, 0.212);
+    position: fixed;
+    backdrop-filter: blur(7px);
+    z-index: 10;
+    
 }
 
 .nav-bar {
@@ -90,9 +94,10 @@ main {
     flex-direction: column;
     /* align-items: center; */
     width: 100%;
-    background-image: url(./imagens/back-main.jpg);
+    /* background-image: url(./imagens/back-main.jpg);
     background-size: 100% 690px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    /* padding-top: 60px; */
 }
 
 
@@ -117,10 +122,17 @@ main {
 .hero-venda {
     width: 100%;
     max-width: 1172px;
-    padding: 96px 0 64px;
+    padding: 186px 0 64px;
     margin: 0 auto;
+    position: relative;
 }
-
+.back-vend{
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+    height: 690px;
+    margin-top: 90px;
+}
 h1 {
     font-size: 64px;
     line-height: 1;
@@ -603,6 +615,7 @@ article {
         margin-top: 32px;
         padding: 0 16px;
     }
+
 }
 
 @media screen and (max-width: 1023px) { 
@@ -622,6 +635,13 @@ article {
         margin: 0 auto;
 
     }
+    .back-vend{
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+    height: 690px;
+    margin-top: 72px;
+}
 
     .hero-content-sec-venda {
         width: 100%;
@@ -638,7 +658,7 @@ article {
     .hero-venda {
         width: 100%;
         max-width: 990px;
-        padding: 32px 0;
+        padding: 104px 0;
         margin: 0 auto;
     }
 
